@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "spellfabric",
+	"version": "${version}",
+	"name": "SpellFabric",
+	"description": "A Minecraft mod that adds spell books and wands.",
+	"authors": [
+		"pizzawithdirt"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/spellfabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.aliyuruk.spellfabric.SpellFabric"
+		],
+		"client": [
+			"net.aliyuruk.spellfabric.SpellFabricClient"
+		],
+		"fabric-datagen": [
+			"net.aliyuruk.spellfabric.SpellFabricDataGenerator"
+		]
+	},
+	"mixins": [
+		"spellfabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

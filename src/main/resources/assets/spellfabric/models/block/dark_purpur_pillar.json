@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "spellfabric:block/dark_purpur_pillar_top",
+    "side": "spellfabric:block/dark_purpur_pillar"
+  }
+}

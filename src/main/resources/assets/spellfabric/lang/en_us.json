@@ -1,0 +1,13 @@
+{
+  "item.spellfabric.fire_wand": "Fire Wand",
+  "item.spellfabric.fire_spellbook": "Fire Spell Book",
+  "item.spellfabric.nature_star": "Nature Star",
+
+  "block.spellfabric.mossy_stone": "Mossy Stone",
+  "block.spellfabric.dark_purpur_block": "Dark Purpur Block",
+  "block.spellfabric.dark_purpur_pillar": "Dark Purpur Pillar",
+
+  "itemgroup.wands": "SpellFabric Wands",
+  "itemgroup.spellbooks": "SpellFabric Books",
+  "itemgroup.blocks": "SpellFabric Blocks"
+}
