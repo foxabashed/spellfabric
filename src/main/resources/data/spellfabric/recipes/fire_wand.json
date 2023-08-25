@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  Y",
+    " S ",
+    "B  "
+  ],
+  "key": {
+    "Y": {
+      "item": "minecraft:fire_charge"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "spellfabric:fire_wand",
+    "count": 1
+  }
+}
