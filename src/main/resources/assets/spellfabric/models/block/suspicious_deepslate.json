@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "spellfabric:block/mossy_stone"
+    "all": "spellfabric:block/suspicious_deepslate"
   }
 }

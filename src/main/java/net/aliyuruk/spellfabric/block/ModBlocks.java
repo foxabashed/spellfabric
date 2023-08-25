@@ -17,8 +17,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block MOSSY_STONE = registerBlock("mossy_stone",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.MOSS_BLOCK).strength(1.5f).requiresTool(),
+    public static final Block SUSPICIOUS_DEEPSLATE = registerBlock("suspicious_deepslate",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.BLOCKS);
 
     public static final Block DARK_PURPUR_BLOCK = registerBlock("dark_purpur_block",

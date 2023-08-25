@@ -22,6 +22,6 @@ public class ModItemGroup {
                 .icon(() -> new ItemStack(ModItems.FIRESPELLBOOK)).build();
         BLOCKS = FabricItemGroup.builder(new Identifier(SpellFabric.MOD_ID, "blocks"))
                 .displayName(Text.translatable("itemgroup.blocks"))
-                .icon(() -> new ItemStack(ModBlocks.MOSSY_STONE)).build();
+                .icon(() -> new ItemStack(ModBlocks.SUSPICIOUS_DEEPSLATE)).build();
     }
 }
