@@ -12,11 +12,11 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-    public static final Item FIREWAND = registerItem("fire_wand",
+    public static final Item FIRE_WAND = registerItem("fire_wand",
         new Item(new FabricItemSettings()));
-    public static final Item FIRESPELLBOOK = registerItem("fire_spellbook",
+    public static final Item FIRE_SPELLBOOK = registerItem("fire_spellbook",
         new Item(new FabricItemSettings()));
-    public static final Item NATURESTAR = registerItem("nature_star",
+    public static final Item NATURE_STAR = registerItem("nature_star",
         new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
@@ -25,9 +25,9 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ModItemGroup.WANDS, FIREWAND);
-        addToItemGroup(ModItemGroup.SPELLBOOKS, FIRESPELLBOOK);
-        addToItemGroup(ItemGroups.INGREDIENTS, NATURESTAR);
+        addToItemGroup(ModItemGroup.WANDS, FIRE_WAND);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, FIRE_SPELLBOOK);
+        addToItemGroup(ItemGroups.INGREDIENTS, NATURE_STAR);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
