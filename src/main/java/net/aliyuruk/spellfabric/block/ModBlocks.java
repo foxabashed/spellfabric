@@ -5,9 +5,7 @@ import net.aliyuruk.spellfabric.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -22,9 +20,11 @@ public class ModBlocks {
                     UniformIntProvider.create(1, 2)), ModItemGroup.BLOCKS);
 
     public static final Block DARK_PURPUR_BLOCK = registerBlock("dark_purpur_block",
-            new Block(FabricBlockSettings.of(Material.DECORATION).strength(3.0f).requiresTool()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.DECORATION).hardness(3.0f).resistance(9.0f).requiresTool()), ModItemGroup.BLOCKS);
     public static final Block DARK_PURPUR_PILLAR = registerBlock("dark_purpur_pillar",
-            new Block(FabricBlockSettings.of(Material.DECORATION).strength(3.0f).requiresTool()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.DECORATION).hardness(3.0f).resistance(9.0f).requiresTool()), ModItemGroup.BLOCKS);
+    public static final SlabBlock DARK_PURPUR_SLAB = (SlabBlock) registerBlock("dark_purpur_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.DECORATION).hardness(3.0f).resistance(9.0f).requiresTool()), ModItemGroup.BLOCKS);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

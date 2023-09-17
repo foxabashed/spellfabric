@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "spellfabric:block/dark_purpur_slab"
+    },
+    "type=double": {
+      "model": "spellfabric:block/dark_purpur_block"
+    },
+    "type=top": {
+      "model": "spellfabric:block/dark_purpur_slab_top"
+    }
+  }
+}
