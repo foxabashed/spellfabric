@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "key": {
-    "#": {
-      "item": "spellfabric:dark_purpur_block"
-    }
+    "#": [
+      {
+        "item": "spellfabric:dark_purpur_block"
+      },
+      {
+        "item": "spellfabric:dark_purpur_pillar"
+      }
+    ]
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "item": "spellfabric:dark_purpur_slab",
-    "count": "6"
+    "count": 6,
+    "item": "spellfabric:dark_purpur_slab"
   }
 }
