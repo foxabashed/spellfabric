@@ -3,19 +3,42 @@ package net.aliyuruk.spellfabric.item;
 import net.aliyuruk.spellfabric.SpellFabric;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
+
+import java.util.function.Predicate;
 
 
 public class ModItems {
-    public static final Item FIRE_WAND = registerItem("fire_wand",
-        new Item(new FabricItemSettings()));
-    public static final Item FIRE_SPELLBOOK = registerItem("fire_spellbook",
-        new Item(new FabricItemSettings()));
+    public static final RangedWeaponItem FIRE_WAND = (RangedWeaponItem) registerItem("fire_wand",
+            new RangedWeaponItem(new FabricItemSettings()) {
+                @Override
+                public Predicate<ItemStack> getProjectiles() {
+                    BOW_PROJECTILES.or(stack -> stack.isOf(Items.FIRE_CHARGE));
+                    return null;
+                }
+
+                @Override
+                public int getRange() {
+                    return 0;
+                }
+            });
+    public static final RangedWeaponItem FIRE_SPELLBOOK = (RangedWeaponItem) registerItem("fire_spellbook",
+            new RangedWeaponItem(new FabricItemSettings()) {
+                @Override
+                public Predicate<ItemStack> getProjectiles() {
+                    return null;
+                }
+
+                @Override
+                public int getRange() {
+                    return 0;
+                }
+            });
+
     public static final Item NATURE_STAR = registerItem("nature_star",
         new Item(new FabricItemSettings()));
 
