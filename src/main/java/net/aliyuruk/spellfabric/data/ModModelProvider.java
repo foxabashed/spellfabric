@@ -21,7 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.FIRE_WAND, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FIRE_SPELLBOOK, Models.GENERATED);
+        // Future Item Model Generation will Go Here
     }
 }

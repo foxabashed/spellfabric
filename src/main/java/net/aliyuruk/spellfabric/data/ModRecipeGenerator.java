@@ -31,15 +31,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(Items.BLAZE_POWDER))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.FIRE_WAND)));
 
-
-        // Recipe for the Dark Purpur Slab
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_PURPUR_SLAB)
-                .pattern("")
-                .pattern("DDD")
-                .pattern("")
-                .input('D', ModBlocks.DARK_PURPUR_BLOCK)
+        // Recipe for the Dark Purpur Pillar
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.DARK_PURPUR_PILLAR)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModBlocks.DARK_PURPUR_SLAB)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DARK_PURPUR_BLOCK),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DARK_PURPUR_BLOCK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.DARK_PURPUR_SLAB)));
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.DARK_PURPUR_PILLAR)));
     }
 }
