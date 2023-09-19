@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
+    public static ItemGroup MISCELLANEOUS;
     public static ItemGroup WANDS;
     public static ItemGroup SPELLBOOKS;
     public static ItemGroup BLOCKS;
@@ -22,6 +23,9 @@ public class ModItemGroup {
                 .icon(() -> new ItemStack(ModItems.FIRE_SPELLBOOK)).build();
         BLOCKS = FabricItemGroup.builder(new Identifier(SpellFabric.MOD_ID, "blocks"))
                 .displayName(Text.translatable("itemgroup.blocks"))
+                .icon(() -> new ItemStack(ModBlocks.SUSPICIOUS_DEEPSLATE)).build();
+        MISCELLANEOUS = FabricItemGroup.builder(new Identifier(SpellFabric.MOD_ID, "miscellaneous"))
+                .displayName(Text.translatable("itemgroup.miscellaneous"))
                 .icon(() -> new ItemStack(ModBlocks.SUSPICIOUS_DEEPSLATE)).build();
     }
 }
