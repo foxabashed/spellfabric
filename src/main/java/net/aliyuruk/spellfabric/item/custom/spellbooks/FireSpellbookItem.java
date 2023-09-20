@@ -1,4 +1,4 @@
-package net.aliyuruk.spellfabric.item.spellbooks;
+package net.aliyuruk.spellfabric.item.custom.spellbooks;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.RangedWeaponItem;

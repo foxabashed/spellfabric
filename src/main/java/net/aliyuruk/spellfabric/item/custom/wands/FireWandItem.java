@@ -1,4 +1,4 @@
-package net.aliyuruk.spellfabric.item.wands;
+package net.aliyuruk.spellfabric.item.custom.wands;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireballEntity;
