@@ -34,6 +34,6 @@ public class ModItemGroup {
 
         MISCELLANEOUS = FabricItemGroup.builder(new Identifier(SpellFabric.MOD_ID, "miscellaneous"))
                 .displayName(Text.translatable("itemgroup.miscellaneous"))
-                .icon(() -> new ItemStack(ModBlocks.SUSPICIOUS_DEEPSLATE)).build();
+                .icon(() -> new ItemStack(ModItems.NATURE_STAR)).build();
     }
 }
