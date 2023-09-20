@@ -7,27 +7,18 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.aliyuruk.spellfabric.item.wands.FireWandItem;
+import net.aliyuruk.spellfabric.item.wands.*;
+import net.aliyuruk.spellfabric.item.spellbooks.*;
 
 import java.util.function.Predicate;
 
 
 public class ModItems {
     public static final Item FIRE_WAND = registerItem("fire_wand",
-            new FireWandItem(new FabricItemSettings()));
+            new FireWandItem(new FabricItemSettings().maxCount(1)));
 
-    public static final RangedWeaponItem FIRE_SPELLBOOK = (RangedWeaponItem) registerItem("fire_spellbook",
-            new RangedWeaponItem(new FabricItemSettings().maxCount(1)) {
-                @Override
-                public Predicate<ItemStack> getProjectiles() {
-                    return null;
-                }
-
-                @Override
-                public int getRange() {
-                    return 0;
-                }
-            });
+    public static final Item FIRE_SPELLBOOK = registerItem("fire_spellbook",
+            new FireSpellbookItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item NATURE_STAR = registerItem("nature_star",
         new Item(new FabricItemSettings()));
@@ -40,7 +31,7 @@ public class ModItems {
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.WANDS, FIRE_WAND);
         addToItemGroup(ModItemGroup.SPELLBOOKS, FIRE_SPELLBOOK);
-        addToItemGroup(ItemGroups.INGREDIENTS, NATURE_STAR);
+        addToItemGroup(ModItemGroup.MISCELLANEOUS, NATURE_STAR);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

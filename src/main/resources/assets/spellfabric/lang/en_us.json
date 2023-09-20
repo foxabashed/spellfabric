@@ -10,5 +10,6 @@
 
   "itemgroup.wands": "SpellFabric Wands",
   "itemgroup.spellbooks": "SpellFabric Books",
-  "itemgroup.blocks": "SpellFabric Blocks"
+  "itemgroup.blocks": "SpellFabric Blocks",
+  "itemgroup.miscellaneous": "SpellFabric Misc"
 }

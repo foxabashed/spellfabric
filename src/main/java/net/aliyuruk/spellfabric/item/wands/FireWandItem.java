@@ -38,10 +38,10 @@ public class FireWandItem extends RangedWeaponItem {
         final float h = MathHelper.cos(player.getYaw() * ((float) Math.PI / 180)) * MathHelper.cos(player.getPitch() * ((float) Math.PI / 180));
         if (!player.world.isClient()) {
             // 2 second cooldown
-            player.getItemCooldownManager().set(this, 2);
+            player.getItemCooldownManager().set(this, 40);
 
             // Create the fireball entity
-            FireballEntity fireballEntity = new FireballEntity(world, player, f, g, h, 5);
+            FireballEntity fireballEntity = new FireballEntity(world, player, f, g, h, 2);
 
             // Set the fireball's velocity
             fireballEntity.setVelocity(player, player.getPitch(), player.getYaw(), 0F, 2, 0.5F);
@@ -51,8 +51,6 @@ public class FireWandItem extends RangedWeaponItem {
 
             // Play fireball sound
             world.playSound(null, player.getBlockPos(), SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.PLAYERS, 0.2f, 1);
-
-
 
         }
         return super.use(world, player, hand);
